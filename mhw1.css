@@ -50,15 +50,14 @@
     padding: 20px;
 }
 
-#intestazione div img
+div#profile img
 {
-    position: absolute;
-    top: 65%;
-    bottom: 0;
-    right: 0;
-    left: 35%;
-    scale: 25%;
-    border-radius: 50%;
+    display: flex;
+    margin-top: 600px;
+    scale: 24%;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 #page-title
@@ -111,7 +110,7 @@
     font-style: italic;
     margin-left: 2.5%;
     opacity: 0.8;
-    margin-top: 4%;
+    margin-top: 6%;
 }
 
 
@@ -182,18 +181,6 @@ section.ordina
     margin-right: 1.5%;
 }
 
-#foto-profilo
-{
-    z-index: 1;
-    height: 10%;
-    width: 10%;
-    border-radius: 50%;
-    position: absolute;
-    left: 400px;
-    top: 335px;
-}
-
-
 #icon-menu
 {
     display: none;
@@ -201,6 +188,13 @@ section.ordina
 
 @media screen and (max-width: 768px)
 {
+    body{
+        margin: 0;
+    }
+    #intro
+    {
+        margin-top: 14%;
+    }
     #icon-menu
     {
         display: flex;
@@ -253,6 +247,10 @@ section.ordina
 
     #paragraph-container h1{
         font-size: 18px;
+    }
+    div#profile img
+    {
+        margin-top: 250px;
     }
 }
 
