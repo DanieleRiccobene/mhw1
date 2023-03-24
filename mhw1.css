@@ -7,16 +7,6 @@
     margin: 0;
 }
 
-#logo
-{
-    width: 100%;
-    display: flex;
-    color: white;
-    font-family: "Playfair Display",cursive;
-    font-size: 1.5em;
-    margin-right: 0;
-}
-
 #intestazione
 {
     height: 500px;
@@ -24,15 +14,8 @@
     background-size: cover;
     position: relative;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-#intestazione nav div
-{
-    display: flex;
-    align-items: center;
 }
 
 #intestazione nav
@@ -50,31 +33,11 @@
     padding: 20px;
 }
 
-div#profile img
+#links
 {
-    margin-top: 500px;
-    border-radius: 100%;
-    height: 100px;
-}
-
-#page-title
-{
-    position: absolute;
-    top: 15%;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    width: 40%;
-    height: 10%;
-    z-index: 1; 
-}
-
-#page-title h1
-{
-    font-weight: normal;
-    color: rgb(255, 255, 255);
-    font-size: 2.5em;
-    font-family:"Poiret One",cursive; 
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
 
 #links a
@@ -103,27 +66,52 @@ div#profile img
     background-color: white;
 }
 
-#intro
+#page-title
 {
-    font-style: italic;
-    margin-left: 2.5%;
-    opacity: 0.8;
-    margin-top: 60px;
+    display: flex;
+    position: absolute;
+    top: 15%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 40%;
+    height: 10%;
 }
 
+
+div#profile img
+{
+    margin-top: 500px;
+    border-radius: 100%;
+    height: 100px;
+}
+
+#page-title h1
+{
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    font-size: 2.5em;
+    font-family:"Poiret One",cursive; 
+}
 
 section.ordina
 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 4.7%;
+    justify-content: center;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 60px;
 }
 
-#paragraph-container
+div.paragraph-container
+{
+    display: flex;
+    width: 66.67%;
+    margin-bottom:120px;
+}
+
+span.content
 {
     display: flex;
     flex-direction: column;
@@ -132,29 +120,28 @@ section.ordina
     width: 66.67%;
 }
 
-#paragraph-container img
+div.paragraph-container img
 {
     width: 100%;
     height: 100%;
+    margin-top: 20px;
+    margin-bottom: 120px;
 }
 
-#paragraph-container h1
+.content h1
 {
-    display: flex;
-    align-items: center;
-    width: 100%;
     color: #c10b18;
     font-family: "Special Elite",sans-serif;
     font-weight: normal;
     font-size: 24px;
-    margin-top: 60px;
 }
 
-.paragraph
+p.paragraph
 {
-    margin-bottom: 120px;
     font-weight: lighter;
     font-style: normal;
+    font-size: 1em;
+    margin-top: 20px;
 }
 
 #footer
@@ -169,17 +156,17 @@ section.ordina
     align-items: center;
 }
 
-.number
+span.number
 {
-    display: flex;
+    text-align: center;
     color: white;
-    align-items: center;
-    justify-content: center;
     background-color: rgb(53, 46, 46);
     border-radius: 50%;
+    font-size: calc(10px + 1.5vw);
+    margin-top: 10px;
+    margin-right: 40px;
+    height: fit-content;
     width: 40px;
-    height: 40px;
-    margin-right: 1.5%;
 }
 
 #icon-menu
@@ -192,11 +179,7 @@ section.ordina
     body
     {
         margin: 0;
-    }
-
-    #intro
-    {
-        margin-top: 60px;
+        font-size: 14px;
     }
 
     #icon-menu
@@ -218,57 +201,13 @@ section.ordina
         display: none;
     }
 
-    #intestazione
+    span.number
     {
-        background-image: cover;
-        height: 250px;
+        width: 20px;
     }
 
-    #page-title
+    .content h1
     {
-        display: flex;
-        position: absolute;
-        top: 15%;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        width: 100%;
-        height: 20%;
-        font-size: 0.6em;
-        align-items: center;
-    }
-
-    #logo
-    {
-        font-size: 1em;
-    }
-
-    #intestazione nav
-    {
-        height: 3%;
-    }
-
-    .number
-    {
-        width: 30px;
-        height: 30px;
-        font-size: 18px;
-    }
-
-    #paragraph-container h1
-    {
-        font-size: 18px;
-    }
-
-    .paragraph
-    {
-        margin-bottom: 60px;
-    }
-
-    div#profile img
-    {
-        margin-top: 250px;
+        font-size: 12px;
     }
 }
-
-
